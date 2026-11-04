@@ -239,7 +239,7 @@ $('saveSignature').onclick=async()=>{
    if(cell.dataset.recordId)sharedIds.add(cell.dataset.recordId);
    saveLocalDraft();
    closeSavePrompt();pendingSaveCell=null;
-   alert('¡Asistencia guardada correctamente! La firma quedó registrada en la lista compartida en Cloudflare.');
+   alert('¡Asistencia guardada correctamente!');
  }catch(e){
    console.error(e);
    const msg=cell.dataset.recordId
